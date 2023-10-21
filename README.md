@@ -4,7 +4,7 @@ Title: School Fee Management System Assignment
 
 Description:
 
-This repository contains a Java-based School Fee Management System developed as part of an assignment. The system is designed to manage school fee payments, calculate due dates, and identify defaulters. It uses a MySQL database with five tables: school, student, fee_head, payment, and defaulter.
+This repository contains a Java-based School Fee Management System developed as part of an assignment. The system is designed to manage school fee payments, calculate due dates, and identify defaulters. It uses a MySQL database with five tables: school, student, fee_head, payment, and defaulter and to develop this project use spring boot as an backend framework.
 
 API Endpoints:
 
