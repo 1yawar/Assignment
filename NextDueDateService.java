@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.util.Date;
 
 @Service
-public class NextDueDate {
+public class NextDueDateService {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
