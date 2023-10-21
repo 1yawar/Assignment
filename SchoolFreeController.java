@@ -21,7 +21,7 @@ public class SchoolFreeController {
     PaymentService paymentService;
 
     @Autowired
-    NextDueDate nextDueDateService;
+    NextDueDateService nextDueDate;
     @Autowired
     DefaulterService defaulterService;
 
