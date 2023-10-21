@@ -4,7 +4,7 @@ import in.co.Edviron.SchoolFeeManagement.Bean.FeeDefaulter;
 import in.co.Edviron.SchoolFeeManagement.Bean.Payment;
 import in.co.Edviron.SchoolFeeManagement.Bean.Student;
 import in.co.Edviron.SchoolFeeManagement.Service.DefaulterService;
-import in.co.Edviron.SchoolFeeManagement.Service.NextDueDate;
+import in.co.Edviron.SchoolFeeManagement.Service.NextDueDateService;
 import in.co.Edviron.SchoolFeeManagement.Service.PaymentService;
 import in.co.Edviron.SchoolFeeManagement.Service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class SchoolFreeController {
     PaymentService paymentService;
 
     @Autowired
-    NextDueDate nextDueDate;
+    NextDueDate nextDueDateService;
     @Autowired
     DefaulterService defaulterService;
 
