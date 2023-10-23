@@ -70,7 +70,6 @@ public class PaymentService {
                         preparedStatement5.setInt(3,payment.getSchoolId());
                         preparedStatement5.setInt(4,payment.getRoll_no());
                         preparedStatement5.executeUpdate();
-                        System.out.println("hello");
 
                     }
                      else {
