@@ -73,8 +73,26 @@ public class PaymentService {
                         System.out.println("hello");
 
                     }
+                     else {
+                        String query9="select frequency_months from fee_head where fee_head_name=?";
+                        PreparedStatement preparedStatement4=connection.prepareStatement(query9);
+                        preparedStatement4.setString(1,payment.getFeeHead());
+                        ResultSet resultSet2=preparedStatement4.executeQuery();
+                        if (resultSet2.next())
+                        {
+                            frequency_months=resultSet2.getInt(1);
+                        }
+                        Date date1 =resultSet1.getDate(1);
+                        PreparedStatement preparedStatement5=connection.prepareStatement("UPDATE student SET end_date = DATE_ADD(?, INTERVAL ? MONTH) WHERE school_id = ? AND student_roll_no = ?");
+                        preparedStatement5.setDate(1,date1);
+                        preparedStatement5.setInt(2,frequency_months);
+                        preparedStatement5.setInt(3,payment.getSchoolId());
+                        preparedStatement5.setInt(4,payment.getRoll_no());
+                        preparedStatement5.executeUpdate();
+                    }
 
                 }
+               
 
                 return "Transaction is successful";
             }
