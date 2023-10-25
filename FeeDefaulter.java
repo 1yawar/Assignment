@@ -1,6 +1,4 @@
 package in.co.Edviron.SchoolFeeManagement.Bean;
-
-import javax.xml.crypto.Data;
 import java.sql.Date;
 
 public class FeeDefaulter {
